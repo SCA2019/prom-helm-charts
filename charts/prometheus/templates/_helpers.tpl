@@ -19,6 +19,7 @@ Create labels for prometheus
 {{- define "prometheus.common.matchLabels" -}}
 app.kubernetes.io/name: {{ include "prometheus.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
+prometheus: monitoring
 {{- end -}}
 
 {{/*
