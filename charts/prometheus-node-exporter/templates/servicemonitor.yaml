@@ -5,7 +5,7 @@ apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
   labels:
-    prometheus: sit
+    prometheus: monitoring
   name: federate
   namespace: istio-system
 spec:
@@ -28,4 +28,4 @@ spec:
     - istio-system # where the Cluster Monitoring Prometheus is running
   selector:
     matchLabels:
-      prometheus: sit
+      prometheus: monitoring
