@@ -28,4 +28,4 @@ spec:
     - istio-system # where the Cluster Monitoring Prometheus is running
   selector:
     matchLabels:
-      prometheus: k8s
+      prometheus: sit
